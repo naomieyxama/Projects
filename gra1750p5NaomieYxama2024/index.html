@@ -1,0 +1,306 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Restaurant Page, Naomie Yxama</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Bentham&family=Pinyon+Script&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<style>
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	wrapper {
+		display: block;
+		margin: auto;
+		width: 850px;
+	}
+	header {
+		width: 850px;
+		height: 600px;
+		background-image: url("pexels-pixabay-260922.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+	h1 {
+		font-family: "Ballet", cursive;
+  		font-optical-sizing: auto;
+  		font-weight: 400;
+  		font-style: normal;
+		font-size: 50px; 
+		color: #FDFFF7;
+	}
+/*nav bar*/
+	nav {
+		text-align: right;
+		display: inline;
+	}
+	nav ul {
+		position: absolute;
+		list-style-type: none;
+	}
+	nav li {
+		display: inline;
+	}
+	nav a {
+		width: 40px;
+    	padding: 15px;
+    	text-decoration: none;
+    	text-transform: uppercase;
+    	font-family: "Quicksand", sans-serif;
+    	font-optical-sizing: auto;
+    	font-style: normal;
+   		color: blanchedalmond;
+	}
+	nav a:hover {
+		color: #0E9594;
+		-webkit-transition: all .2s ease-in-out 0s;
+    	-o-transition: all .2s ease-in-out 0s;
+    	transition: all .2s ease-in-out 0s;
+	}
+	nav a:active {
+		color: #FDFFF7;
+		border-bottom: 2px thick #0E9594;
+	}
+/* end of nav bar*/
+	
+	h2, h3 {
+		margin: 0;
+		font-style: normal;
+		font-weight: 400;
+		text-align: center
+	}
+	h2 {
+		font-size: 50px;
+		font-family: "Pinyon Script", cursive;
+	}
+	h3 {
+		font-size: 30px;
+		font-family: "Bentham", serif;
+	}
+	section {
+		padding: 30px 90px;
+		color: blanchedalmond;
+	}
+	section p, button {
+		font-size: 11px;
+		text-transform: uppercase;
+    	font-family: "Quicksand", sans-serif;
+    	font-optical-sizing: auto;
+    	font-style: normal;
+		letter-spacing: 2px;
+	}
+	span {
+		display: inline-block;
+		width: 49%;
+	}
+	span li {
+		list-style-type: none;
+		width: 250px;
+	}
+/*button styling*/
+	button {
+    	padding: 20px;
+    	background-color: #1D1D1D;
+   		color: blanchedalmond;
+    	border: 2px solid blanchedalmond;
+    	-webkit-transition: all 2s ease 0s;
+    	-o-transition: all 2s ease 0s;
+    	transition: all 2s ease 0s;
+	}
+	button:hover {
+    	border-color: #0e9495;
+    	color: #0e9495;
+}
+/* end of button styling*/
+	hr {
+		overflow: visible;
+   		height: 30px;
+    	border-style: solid;
+    	border-color: blanchedalmond;
+    	border-width: 1px 0 0 0;
+    	border-radius: 20px;
+	}
+	hr:before {
+		display: block;
+    	content: "";
+    	height: 30px;
+    	margin-top: -31px;
+    	border-style: solid;
+    	border-color: blanchedalmond;
+    	border-width: 0 0 1px 0;
+    	border-radius: 20px;
+	}
+	.menuSection {
+		background-color: #120F0F;
+		height: 1700px;
+	}
+	.reservationsSection {
+		background-color: #1D1D1D;
+	}
+	.locationSection {
+		background-color: #120F0F;
+	}
+	.hoursSection {
+		background-color: #1D1D1D;
+	}
+</style>
+</head>
+
+<body>
+	<wrapper>
+		<header>
+			<nav>
+				<img src="233-2332677_image-500580-placeholder-transparent.png" width= "90px" alt="restaurant-logo"/>
+				<h1>La Maison Étoil&eacute;e</h1>
+				<span>
+				<ul class="navBar">
+					<li><a href="#menu">Menu</a></li>
+ 		 			<li><a href="#reservations">Reservations</a></li>
+  					<li><a href="#locations">Locations</a></li>
+  					<li><a href="#hours">Hours</a></li>
+				</ul>
+				</span>
+			</nav>
+		</header>
+		<section class="menuSection" id="menu">
+			<hr>
+			<h2>Menu</h2>
+			<h3>Apetizers - Hors d'Œuvre</h3>
+			<span>
+			<ul>
+				<li>Ostras aux Perles</li>
+				<p>Freshly shucked Kumamoto oysters, served on a bed of seaweed with champagne mignonette and edible pearls of lemon caviar.</p>
+				<li>Soupe de Truffe et Châtaigne</li>
+				<p>Velvety chestnut soup infused with black winter truffles, garnished with microgreens and a drizzle of truffle oil, served with a homemade brioche crouton.</p>
+				<li>Tartare de Saumon aux Agrumes</li>
+				<p>Hand-chopped Scottish salmon tartare, delicately flavored with yuzu and served with avocado mousse, pickled ginger, and a sprinkling of sesame seeds.</p>
+			</ul>
+			</span>
+			<span>
+			<ul>
+				<li>Apetizer Price</li>
+				<li>Apetizer Price</li>
+				<li>Apetizer Price</li>
+			</ul>
+			</span>
+			
+			<h3>Entr&eacute;es</h3>
+			
+			<span>	
+			<ul>
+				<li>Filet de Bœuf Rossini</li>
+				<p>Prime filet mignon topped with foie gras and black truffle, perched on a crispy potato galette, accompanied by a rich red wine reduction.</p>
+				<li>Homard à la Vanille et Épices</li>
+				<p>Butter-poached Maine lobster tail, drizzled with vanilla-infused beurre blanc, served with saffron-infused risotto and seasonal vegetables.</p>
+				<li>Ravioles de Champignons Sauvages</li>
+				<p>Handmade ravioli filled with wild mushrooms, sautéed in garlic and sage, adorned with a cloud of parmesan foam and micro basil.</p>
+				<li>Sashimi de Saint-Jacques</li>
+				<p>Thinly sliced scallops presented with a yuzu-soy emulsion and pickled ginger pearls.</p>
+			</ul>
+			</span>
+			<span>
+			<ul>
+				<li>Entr&eacute;e Price</li>
+				<li>Entr&eacute;e Price</li>
+				<li>Entr&eacute;e Price</li>
+			</ul>
+			</span>
+			
+			<h3>Soups &amp; Salads</h3>
+			
+			<span>
+			<ul>
+				<li>Velouté de Potiron</li>
+				<p>Creamy pumpkin velouté, elegantly swirled with crème fraîche and garnished with toasted graines de courge.</p>
+				<li>Salade Niçoise</li>
+				<p>A classic Niçoise salad featuring fresh tuna, crunchy haricots verts, olives de Nice, hard-boiled eggs, and cherry tomatoes, drizzled with a Dijon vinaigrette.</p>
+				<li>Salade de Roquette et Parmesan</li>
+				<p>Peppery arugula adorned with shaved Parmesan, toasted pignons de pin, and a refreshing lemon vinaigrette.</p>
+			</ul>
+			</span>
+			<span>
+			<ul>
+				<li>Sides Price</li>
+				<li>Sides Price</li>
+				<li>Sides Price</li>
+			</ul>
+			</span>
+			
+			<h3>Dessert</h3>
+			
+			<span>
+			<ul>
+				<li>Crème Brûlée</li>
+				<p>Classic vanilla crème brûlée with a perfectly caramelized sugar crust, served with fresh fruits for a light finish.</p>
+				<li>Panna Cotta à la Lavande</li>
+				<p>Silky panna cotta infused with lavender, served with a berry compote and a buttery shortbread cookie.</p>
+				<li>Gâteau de Crêpes Suzette</li>
+				<p>A stack of delicate crêpes infused with orange zest, flambéed with Grand Marnier, and served with a rich orange sauce and a scoop of vanilla ice cream.</p>
+			</ul>
+			</span>
+			<span>
+			<ul>
+				<li>Dessert Price</li>
+				<li>Dessert Price</li>
+				<li>Dessert Price</li>
+			</ul>
+			</span>
+			<hr>
+		</section>
+		<section class="reservationsSection" id="reservations">
+			<hr>
+			<h2>Reservations</h2>
+			<p>Our phone reservationists are available from 11am-11pm daily. Please kindly contact <strong>reservations&#64;elysian.com</strong> outside regular call hours, or if the lines are busy. Reservations can be made up to 30 days in advance, and are required for groups of 5 or more. Please provide at least 24 hours notice for cancellations or changes to your reservation to avoid a &#36;50 cancellation fee.</p>
+
+			<p>We offer a 15 minute grace period for late arrivals and only seat complete parties. If your party arrives or is incomplete more than 15 minutes past the reservation time, we will try our best to accommodate you but may need to expedite your dining experience or reschedule it in order to honor the next reservation on the table.</p>
+			
+			<br>
+			
+			<h3>Dress Code</h3>
+			<p><strong>Gentlemen:</strong> Please adorn yourselves in tailored suits or elegant evening attire. Dress shoes are required.</p>
+
+			<p><strong>Ladies:</strong> Please adorn yourselves in elegant gowns or cocktail dresses (Dresses should be of a modest length; please avoid overly short styles.) Dressy heels are required.</p>
+			
+			<br>
+			
+			<h3>General Guidelines:</h3>
+
+			<p>No athletic wear, shorts, hats, flats or casual footwear will be permitted. Casual fabrics and designs are not permitted.</p>
+			<p>Ensure that attire is clean, well-fitted, and free of distress</p>
+
+			<p>We appreciate your adherence to our dress code, as it enhances the overall dining experience for all our guests. Thank you.</p>
+			
+			<br>
+			
+			<button>Make a Reservation</button>
+			<button>Book for an Event</button>
+			<br>
+			<hr>
+		</section>
+		<section class="locationSection" id="locations">
+			<hr>
+			<h2>Locations</h2>
+			<hr>
+		</section>
+		<section class="hoursSection" id="hours">
+			<hr>
+			<h2>Hours</h2>
+			<p><strong>Sunday: </strong>Closed</p>
+			<p><strong>Monday-Wednesday: </strong>5-8PM</p>
+			<p><strong>Thursday: </strong>5-11:30PM</p>
+			<p><strong>Friday and Saturday: </strong>5-MIDNIGHT</p>
+			<hr>
+		</section>
+			<footer>
+	  <section><h2>Follow Us</h2></section>
+		<section><p>&copy; 2024, Naomie Yxama. <br> This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p></section>
+	</footer>
+		
+	</wrapper>
+	
+
+</body>
+</html>
