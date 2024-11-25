@@ -1,0 +1,415 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Restaurant Page, Naomie Yxama</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Pinyon+Script&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<style>
+/*mobile structure*/
+	body {
+		margin: 0;
+		padding: 0;
+		background-image: url("pexels-pixabay-260922 bw.jpg");
+		background-size: cover;
+		background-position: center;
+	}
+	wrapper {
+		display: block;
+		margin: auto;
+		width: 850px;
+	}
+	header {
+		width: 850px;
+		height: 600px;
+		background-image: url("pexels-pixabay-260922.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+/* end of mobile structure*/
+	
+/*logo and restaurant name styling*/
+	h1 {
+		font-family: "Ballet", cursive;
+  		font-optical-sizing: auto;
+		font-style: normal;
+  		font-weight: 400;
+		font-size: 90px;
+		text-align: center;
+		margin: 0px;
+		color: #FF09A9;
+		text-shadow: 5px 1px 2px black;
+		;
+	}
+/*end of logo and restaurant name styling*/
+	
+/*nav bar styling*/
+	nav ul {
+		list-style-type: none;
+		margin: 0px;
+	}
+	nav li {
+		text-align: center;
+		font-weight: 100;
+		font-size: 50px;
+		padding: 15px;
+    	text-decoration: none;
+    	text-transform: uppercase;
+    	font-family: "Quicksand", sans-serif;
+    	font-optical-sizing: auto;
+	}
+	nav a {
+		text-decoration: none;
+		color: blanchedalmond;
+	}
+	nav a:hover {
+		color: #0E9594;
+		border-bottom: 5px solid #0E9594;
+		-webkit-transition: all .4s ease-in-out 0s;
+    	-o-transition: all .4s ease-in-out 0s;
+    	transition: all .4s ease-in-out 0s;
+	}
+	nav a:active {
+		color: #FDFFF7;
+		border-bottom: 2px thick #0E9594;
+	}
+/* end of nav bar styling*/
+	
+	h2, h3 {
+		margin: 0;
+		font-style: normal;
+		font-weight: 400;
+		text-align: center
+	}
+	h2 {
+		font-size: 65px;
+		font-family: "Pinyon Script", cursive;
+	}
+	h3 {
+		font-size: 35px;
+		font-family: "EB Garamond", serif;
+	}
+	section {
+		padding: 30px 90px;
+		color: blanchedalmond;
+	}
+	p, button, .hours li {
+		text-transform: uppercase;
+    	font-family: "Quicksand", sans-serif;
+    	font-optical-sizing: auto;
+    	font-style: normal;
+		letter-spacing: 2px;
+		text-align: justify;
+	}
+	.menuSection li {
+		font-size: 38px;
+	}
+	.menuSection p {
+		font-size: 38px;
+	}
+	.hoursSection li {
+		font-size: 38px;
+	}
+	div {
+		display: inline-block;
+		width: 90%;
+		text-align: justify;
+		font-style: italic;
+		font-family: "EB Garamond", serif;
+	}
+	div li {
+		list-style-type: none;
+		font-size: 30px;
+	}
+/*button styling*/
+	button {
+    	padding: 20px;
+		margin: 50px 0px;
+    	background-color: #1D1D1D;
+   		color: blanchedalmond;
+    	border: 2px solid blanchedalmond;
+		text-align: center;
+		margin: 0;
+    	-webkit-transition: all .4s ease 0s;
+    	-o-transition: all .4s ease 0s;
+    	transition: all .4s ease 0s;
+	}
+	button:hover {
+    	border-color: #0e9495;
+    	color: #0e9495;
+	}
+/* end of button styling*/
+	
+	.description {
+		width: 85%;
+	}	
+	.price {
+		padding-left: 20px;
+		width: 10%;
+		text-align: right;
+	}
+	div {
+		display: inline-block;
+		vertical-align: top;
+	}
+	.centerP {
+		text-align: center;
+	}
+	.locationSection p {
+		text-align: center;
+	}
+	.sectionSeperater {
+		overflow: visible;
+   		height: 30px;
+    	border-style: solid;
+    	border-color: blanchedalmond;
+    	border-width: 1px 0 0 0;
+    	border-radius: 20px;
+	}
+	.sectionSeperater:before {
+		display: block;
+    	content: "";
+    	height: 30px;
+    	margin-top: -31px;
+    	border-style: solid;
+    	border-color: blanchedalmond;
+    	border-width: 0 0 1px 0;
+    	border-radius: 20px;
+	}
+	.menuSection {
+		background-color: #120F0F;
+		height: 1300px;
+	}
+	.reservationsSection {
+		background-color: #1D1D1D;
+		font-size: 20px;
+	}
+	.reservationsSection p, footer p {
+		padding: 0px 40px;
+	}
+	.locationSection {
+		background-color: #120F0F;
+	}
+	.hoursSection {
+		background-color: #1D1D1D;
+		text-align: center;
+	}
+	footer {
+		background-color: #120F0F;
+		text-align: justify;
+	}
+
+@media (min-width: 1024px){
+	wrapper {
+		margin: auto;
+		width: 1400px;
+	}
+	header {
+		width: 1400px;
+		height: 800px;
+	}
+	nav ul {
+		text-align: right;
+		padding: 0px 40px;
+	}
+	nav li {
+		font-size: 25px;
+		display: inline-block;
+	}
+	h1 {
+		font-size: 300px; 
+		margin: 0px;
+		position: absolute;
+  		top: 50%;
+  		left: 50%;
+  		-ms-transform: translate(-50%, -50%);
+  		transform: translate(-50%, -50%)
+	}
+	nav li {
+		padding: 35px;
+	}
+	h2 {
+		font-size: 50px;
+	}
+	h3 {
+		font-size: 30px;
+	}
+	p, button, .hours li {
+		font-size: 18px;
+	}
+	.menuSection p{
+		font-size: 18px;
+	}
+	.menuSection {
+		height: 450px;
+	}
+	.reservationsSection p, footer p {
+		padding: 0px 190px;
+	}
+}
+</style>
+</head>
+
+<body>
+	<wrapper>
+		<header>
+		<h1>&Eacute;toil&eacute;e</h1>
+			<nav>
+				<!--<img src="" alt="restaurant-logo"/>-->
+				<ul class="navBar">
+					<li><a href="#menu">Menu</a></li>
+ 		 			<li><a href="#reservations">Reservations</a></li>
+  					<li><a href="#locations">Locations</a></li>
+  					<li><a href="#hours">Hours</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section class="menuSection" id="menu">
+			<hr class="sectionSeperater">
+			<h2>Menu</h2>
+			<h3>Apetizers - Hors d&rsquo;&OElig;uvre</h3>
+			<div>
+			<ul>
+				<div class="description">
+				<li>Ostras aux Perles</li>
+				<p>Freshly shucked Kumamoto oysters, served on a bed of seaweed with champagne mignonette and edible pearls of lemon caviar.</p></div>
+				<div class="price"><li>39</li></div>
+				<div class="description">
+				<li>Tartare de Saumon aux Agrumes</li>
+				<p>Hand-chopped Scottish salmon tartare, delicately flavored with yuzu and served with avocado mousse, pickled ginger, and a sprinkling of sesame seeds.</p></div>
+				<div class="price"><li>52</li></div>
+			</ul>
+			</div>
+<!--
+			<h3>Entr&eacute;es</h3>
+			
+			<span>	
+			<ul>
+				<li>Filet de Bœuf Rossini</li>
+				<p>Prime filet mignon topped with foie gras and black truffle, perched on a crispy potato galette, accompanied by a rich red wine reduction.</p>
+				<li>Homard &agrave; la Vanille et &Eacute;pices</li>
+				<p>Butter-poached Maine lobster tail, drizzled with vanilla-infused beurre blanc, served with saffron-infused risotto and seasonal vegetables.</p>
+				<li>Ravioles de Champignons Sauvages</li>
+				<p>Handmade ravioli filled with wild mushrooms, sautéed in garlic and sage, adorned with a cloud of parmesan foam and micro basil.</p>
+				<li>Sashimi de Saint-Jacques</li>
+				<p>Thinly sliced scallops presented with a yuzu-soy emulsion and pickled ginger pearls.</p>
+			</ul>
+			</span>
+			<span>
+			<ul>
+				<li>178</li>
+				<li>94</li>
+				<li>91</li>
+				<li>102</li>
+			</ul>
+			</span>
+			
+			<h3>Soups &amp; Salads</h3>
+			
+			<span>
+			<ul>
+				<li>Velout&eacute; de Potiron</li>
+				<p>Creamy pumpkin velout&eacute;, elegantly swirled with crème fra&icirc;che and garnished with toasted graines de courge.</p>
+				<li>Salade Ni&ccedil;oise</li>
+				<p>A classic Ni&ccedil;oise salad featuring fresh tuna, crunchy haricots verts, olives de Nice, hard-boiled eggs, and cherry tomatoes, drizzled with a Dijon vinaigrette.</p>
+				<li>Soupe de Truffe et Ch&acirc;taigne</li>
+				<p>Velvety chestnut soup infused with black winter truffles, garnished with microgreens and a drizzle of truffle oil, served with a homemade brioche crouton.</p>
+				<li>Salade de Roquette et Parmesan</li>
+				<p>Peppery arugula adorned with shaved Parmesan, toasted pignons de pin, and a refreshing lemon vinaigrette.</p>
+			</ul>
+			</span>
+			<span>
+			<ul>
+				<li>48</li>
+				<li>55</li>
+				<li>45</li>
+				<li>37</li>
+			</ul>
+			</span>
+			
+			<h3>Dessert</h3>
+			
+			<span>
+			<ul>
+				<li>Cr&egrave;me Br&ucirc;l&eacute;e</li>
+				<p>Classic vanilla crème brûlée with a perfectly caramelized sugar crust, served with fresh fruits for a light finish.</p>
+				<li>Panna Cotta &agrave; la Lavande</li>
+				<p>Silky panna cotta infused with lavender, served with a berry compote and a buttery shortbread cookie.</p>
+				<li>Gâteau de Crêpes Suzette</li>
+				<p>A stack of delicate crêpes infused with orange zest, flamb&eacute;ed with Grand Marnier, and served with a rich orange sauce and a scoop of vanilla ice cream.</p>
+			</ul>
+			</span>
+			<span>
+			<ul>
+				<li>66</li>
+				<li>40</li>
+				<li>47</li>
+			</ul>
+			</span>
+-->
+		</section>
+		<section class="reservationsSection" id="reservations">
+			<hr class="sectionSeperater">
+			<h2>Reservations</h2>
+			<p>Reservations can be made up to 30 days in advance, and are required for groups of 5 or more. Please provide at least 24 hours notice for cancellations or changes to your reservation to avoid a &#36;50 cancellation fee.</p>
+
+			<p>We offer a 15 minute grace period for late arrivals and only seat complete parties. If your party arrives or is incomplete more than 15 minutes past the reservation time, we will try our best to accommodate you but may need to expedite your dining experience or reschedule it in order to honor the next reservation on the table.</p>	
+<!--
+			<br>
+			
+			<h3>Dress Code</h3>
+			<p><strong>Gentlemen:</strong> Please adorn yourselves in tailored suits or elegant evening attire. Dress shoes are required.</p>
+
+			<p><strong>Ladies:</strong> Please adorn yourselves in elegant gowns or cocktail dresses (Dresses should be of a modest length; please avoid overly short styles.) Dressy heels are required.</p>
+			
+			<br>
+			
+			<h3>General Guidelines:</h3>
+
+			<p>No athletic wear, shorts, hats, flats, casual footwear, relaxed fabrics and designs will be permitted.</p>
+			<p>Ensure that attire is clean, well-fitted, and free of distress</p>
+
+			<p>We appreciate your adherence to our dress code, as it enhances the overall dining experience for all our guests. Thank you.</p>
+-->		<div>
+			<button>Make a Reservation</button>
+			<button>Book for an Event</button>
+			<br>
+		</div>
+		</section>
+		<section class="locationSection" id="locations">
+			<hr class="sectionSeperater">
+				<h2>Locations</h2>
+				<h3>Florida</h3>
+				<p>43 Honey Creek Ave.<br>West Palm Beach, FL 33415</p>
+				<h3>New York</h3>
+				<p>84 Sugar Ave.<br>New York, NY 10025</p>
+				<h3>Los Angeles</h3>
+				<p>8780 Lafayette Ave.<br>Rialto, CA 92376</p>
+		</section>
+		<section class="hoursSection" id="hours">
+			<hr class="sectionSeperater">
+			<div class="hours">
+				<h2>Hours</h2>
+				<ul>
+					<li>Sunday: <span>Closed</span></li>
+					<li>Monday-Wednesday: <span>5-8PM</span></li>
+					<li>Thursday: <span>5-11:30PM</span></li>
+					<li>Friday and Saturday: <span>5-MIDNIGHT</span></li>
+				</ul>
+			</div>
+		</section>
+	<footer>
+	  <section>
+		  <hr class="sectionSeperater">
+		  <h2>Follow Us</h2>
+			<p class="centerP">&copy; 2024, Naomie Yxama. <br></p><p>This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+		</section>
+	</footer>
+		
+	</wrapper>
+	
+
+</body>
+</html>
