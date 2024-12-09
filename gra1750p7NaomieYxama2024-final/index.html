@@ -1,0 +1,436 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Wicked, Naomie Yxama 2024</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+	
+<style>
+	@font-face {
+    	font-family: 'wicked_fontregular';
+    	src: url(WickedFont-Regular-BF65f34594abb81.woff);
+    	font-weight: normal;
+		font-style: normal; 
+	}
+	body, html {
+		cursor: url("elphaba-broom-128x128.png"), auto;
+	}
+	body {
+		margin: auto;
+		padding: 0;
+		color: whitesmoke;
+		background-image: url("wicked-poster.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		font-family: "Outfit", sans-serif;
+	}
+	header, h1, footer p {
+		margin: 0;
+		padding: 0;
+	}
+	header, footer { 
+		background-color: black;
+		font-family: "Outfit", sans-serif;
+	}
+	.letters {
+		text-align: center;
+	}
+	h1 {
+		display: inline;
+		font-family: 'wicked_fontregular';
+		font-size: 180px;
+    	color: black;
+		text-shadow: 
+      	-1px -1px 4px #face3e,
+		-2px -2px 4px white;
+  		transition: text-shadow 1s ease-out;
+		transition-delay: .3s;
+	}
+	nav a {
+		display: inline-block;
+		text-decoration: none;
+		font-family: "Outfit", sans-serif;
+  		font-optical-sizing: auto;
+  		font-style: normal;
+		font-size: 25px;
+		background-color: white;
+		border-radius: 50px;
+  		color: black;
+  		margin: 50px 50px 50px 0px;
+		padding: 14px 25px;
+		cursor: url(glinda-wand-128x128.png), auto;
+	}
+	nav a:visited {
+		text-decoration: none;
+		cursor: url(glinda-wand-128x128.png), auto;
+	}
+	nav a:hover {
+		background-color: #FF5599;
+		color: black;
+		cursor: url(glinda-wand-128x128.png), auto;
+	}
+	nav {
+		padding: 0px;
+		margin: 0px;
+		text-align: right;
+	}
+	.synopsis-and-trailor {
+		font-family: "Outfit", sans-serif;
+		margin: auto;
+		width: 1200px;
+		padding: 50px;
+  		font-optical-sizing: auto;
+  		font-style: normal;
+		font-size: 18px;
+		text-align: center;
+		background-color: rgba(14,14,14,.80)
+	}
+	img {
+		width: 400px;
+	}
+	video {
+		width: 750px;
+		display: block;
+		margin: 0 auto;
+	}
+	.buttons {
+		text-align: center;
+	}
+	footer {
+		text-align: center;
+		padding: 50px;
+	}
+	.W:hover {
+		text-shadow: 
+		-1px -1px 4px #face3e,
+		-2px -2px 4px white,
+		-10px 10px 60px #FE5798,
+		2px -2px 1px #FE5798,
+        3px -3px 1px #FE5798,
+        4px -4px 1px #FE5798,
+        5px -5px 1px #FE5798,
+        6px -6px 1px #FE5798,
+        7px -7px 1px #FE5798,
+        8px -8px 1px #FE5798,
+        9px -9px 1px #FE5798,
+        10px -10px 1px #FE5798;
+		transition-delay: 0s;
+		cursor: url(glinda-wand-128x128.png), auto;
+	}
+	.i:hover {
+		text-shadow: 
+		-1px -1px 4px #face3e,
+		-2px -2px 4px white,
+		-8px 8px 60px #EB818E,
+		2px -2px 1px #EB818E,
+        3px -3px 1px #EB818E,
+        4px -4px 1px #EB818E,
+        5px -5px 1px #EB818E,
+        6px -6px 1px #EB818E,
+        7px -7px 1px #EB818E,
+        8px -8px 1px #EB818E,
+        9px -9px 1px #EB818E,
+        10px -10px 1px #EB818E;
+		transition-delay: 0s;
+		cursor: url(glinda-wand-128x128.png), auto;
+	}
+	.c:hover {
+		text-shadow:
+		-1px -1px 4px #face3e,
+		-2px -2px 4px white,
+		-6px -6px 60px #DAA685,
+		1px -2px 1px #DAA685,
+        1px -3px 1px #DAA685,
+        1px -4px 1px #DAA685,
+        1px -5px 1px #DAA685,
+        1px -6px 1px #DAA685,
+        1px -7px 1px #DAA685,
+        1px -8px 1px #DAA685,
+        1px -9px 1px #DAA685,
+        1px -10px 1px #DAA685;
+		transition-delay: 0s;
+		cursor: url(glinda-wand-128x128.png), auto;
+	}
+	.k:hover {
+		text-shadow: 
+		-1px -1px 4px #face3e,
+		-2px -2px 4px white,
+		0px 0px 60px #C7C87C,
+		0px -2px 1px #C7C87C,
+        0px -3px 1px #C7C87C,
+        0px -4px 1px #C7C87C,
+        0px -5px 1px #C7C87C,
+        0px -6px 1px #C7C87C,
+        0px -7px 1px #C7C87C,
+        0px -8px 1px #C7C87C,
+        0px -9px 1px #C7C87C,
+        0px -10px 1px #C7C87C;
+		transition-delay: 0s;
+	}
+	.e:hover {
+		text-shadow: 
+		-1px -1px 4px #face3e,
+		-2px -2px 4px white,
+		8px 8px 60px #7ACE6A,
+		-2px -2px 1px #7ACE6A,
+        -3px -3px 1px #7ACE6A,
+        -4px -4px 1px #7ACE6A,
+        -5px -5px 1px #7ACE6A,
+        -6px -6px 1px #7ACE6A,
+        -7px -7px 1px #7ACE6A,
+        -8px -8px 1px #7ACE6A,
+        -9px -9px 1px #7ACE6A,
+        -10px -10px 1px #7ACE6A;
+		transition-delay: 0s;
+	}
+	.d:hover {
+		text-shadow: 
+		-1px -1px 4px #face3e,
+		-2px -2px 4px white,
+		8px 8px 60px #03D64E,
+		-2px -2px 1px #03D64E,
+        -3px -3px 1px #03D64E,
+        -4px -4px 1px #03D64E,
+        -5px -5px 1px #03D64E,
+        -6px -6px 1px #03D64E,
+        -7px -7px 1px #03D64E,
+        -8px -8px 1px #03D64E,
+        -9px -9px 1px #03D64E,
+        -10px -10px 1px #03D64E;
+		transition-delay: 0s;
+	}
+	
+	.button:link, .button:visited {
+		margin: 90px 10px;
+		font-family: "Outfit", sans-serif;
+  		font-optical-sizing: auto;
+  		font-style: normal;
+		font-size: 25px;
+  		border: 5px solid #00A63C;
+		border-radius: 50px;
+  		color: #00A63C;
+  		padding: 14px 25px;
+  		text-align: center;
+  		text-decoration: none;
+  		display: inline-block;
+	}
+	.button:hover {
+  		border-color: #FF5599;
+		color: #FF5599;
+		cursor: url(glinda-wand-128x128.png), auto;
+		animation: glow 1s ease-in-out infinite alternate;
+	}
+	@-webkit-keyframes glow {
+  	from {
+    	box-shadow: 0 0 6px #fff, 0 0 8px #fff, 0 0 10px #fff, 0 0 12px #FF167A, 0 0 14px #FF167A, 0 0 16px #FF167A, 0 0 18px #FF167A;
+  		} 
+  	to {
+    	box-shadow: 0 0 16px #fff, 0 0 18px #fff, 0 0 20px #fff, 0 0 22px #FF439D, 0 0 24px #FF439D, 0 0 26px #FF439D, 0 0 28px #FF439D;
+  		}
+	}
+	.button:active {
+		background-color: whitesmoke;
+		border: none;
+		color: black;
+	}
+	.sparkle {
+  		position: fixed;
+  		z-index: 6;
+  		opacity: 0.5;
+  		pointer-events: none;
+	}
+/*
+	.star {
+		position: fixed;
+		pointer-events: none;
+	}
+
+	.star:before, .star:after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		content: '\2726';
+		font-size: 9px;
+	}
+	.star:before {
+		color: transparent;
+		text-shadow: 0 0 3px rgb(250, 250, 174);
+	}
+	.star:after {
+		background: white;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+*/
+</style>	
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="#characters">Characters</a>
+			<a href="https://www.wickedmovie.com/gallery/">Gallery</a>
+		</nav>
+		<div class="letters">
+			<h1 class="W">W</h1>
+			<h1 class="i">i</h1>
+			<h1 class="c">c</h1>
+			<h1 class="k">k</h1>
+			<h1 class="e">e</h1>
+			<h1 class="d">d</h1>
+		</div>
+		<div class="buttons">
+			<a class="button" href="https://www.wickedmovie.com/">Get Tickets</a>
+			<a class="button" href="#trailor">Watch Trailer</a>
+		</div>
+	</header>
+	<wrapper>
+		<div class="synopsis-and-trailor">
+			<h2>Synopsis</h2>
+			<p>Misunderstood because of her green skin, a young woman named Elphaba, the future Wicked Witch of the West, forges an unlikely but profound friendship with Glinda, the future Glinda the Good and a student with an unflinching desire for popularity. Following an encounter with the Wizard of Oz, their relationship soon reaches a crossroad as their lives begin to take very different paths. Set in the Land of Oz before the events of The Wonderful Wizard of Oz.</p>
+			<br>
+		<h2>Characters</h2>	
+		<div id="characters" class="characters">
+			<img alt="elphaba" src="cynthia-as-elphaba.jpg">
+			<img alt="glinda" src="ariana-as-glinda.jpg">
+			<img alt="fiyero" src="john-as-fiyero.jpg">
+			<img alt="madame-morrible" src="michelle-as-madame.jpg">
+			<img alt="the-wizard" src="jeff-as-wizard.jpg">
+			<img alt="boq" src="ethan-as-boq.jpg">
+			<img alt="nessarose" src="marissa-as-nessa.jpg">
+			<img alt="shensehen" src="bronwyn-as-shenshen.jpg">
+			<img alt="pfanne" src="bowen-as-pfanne.jpg">
+			<img alt="peter" src="peter-as-docter.jpg">
+		</div>
+		<h2>Trailor</h2>
+			<video id="trailor" poster="trailor-thumbnail.png" controls>
+				<source src="Wicked - Official Trailer.mp4" type="video/mp4">
+			</video>
+		</div>
+		<footer>
+			<p>&copy; 2024, Naomie Yxama.<br>This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+		</footer>
+	</wrapper>
+	<script>
+//window.addEventListener('mousemove', function(e) {
+//      var arr = [1, 0.9, 0.8, 0.5, 0.2];
+//
+//      arr.forEach(function(i) {
+//        var x = (1 - i) * 75;
+//        var star = document.createElement('div');
+//
+//        star.className = 'star';
+//        star.style.top = e.pageY + Math.round(Math.random() * x - x / 2) + 'px';
+//        star.style.left = e.pageX + Math.round(Math.random() * x - x / 2) + 'px';
+//
+//        document.body.appendChild(star);
+//
+//        window.setTimeout(function() {
+//          document.body.removeChild(star);
+//        }, Math.round(Math.random() * i * 600));
+//      });
+//	
+//    }, false);
+		let trailArr = [1, .9, .8, .5, .25, .6, .4, .3, .2];
+var sparklesArr = [];
+
+function trailAnimation(e, i, maxYTranslation) {
+  let elem = document.createElement('div');
+
+  elem = styleSparkle(elem, e, i);
+  
+  elem.classList.add("sparkle");
+
+  document.body.appendChild(elem);
+
+  elem = addAnimationProperties(elem, i, maxYTranslation);
+  
+  sparklesArr.push(elem);
+}
+
+function styleSparkle(elem, e, i) {
+  let j = (1 - i) * 50;
+  let size = Math.ceil(Math.random() * 10 * i) + 'px';
+  
+  elem.style.top = e.pageY - window.scrollY + Math.round(Math.random() * j - j / 2) + 'px';
+  elem.style.left = e.pageX + Math.round(Math.random() * j - j / 2) + 'px';
+  
+  elem.style.width = size;
+  elem.style.height = size;
+  elem.style.borderRadius = size;
+  
+  elem.style.background = 'hsla(' +
+    Math.round(Math.random() * 160) + ', ' +
+    '60%, ' +
+    '90%, ' +
+    i + ')';
+  
+  return elem;
+}
+
+function addAnimationProperties(elem, i, maxYTranslation) {
+  const ANIMATION_SPEED = 1100;
+  let lifeExpectancy = Math.round(Math.random() * i * ANIMATION_SPEED);
+
+  elem.maxYTranslation = maxYTranslation;
+  elem.animationSpeed = ANIMATION_SPEED;
+  elem.created = Date.now();
+  elem.diesAt = elem.created + lifeExpectancy;
+
+  return elem;
+}
+
+function moveSparkles() {
+  let remove = false;
+  let moveIndex = 0;
+  let sparkle;
+
+  for (let i = 0; i < sparklesArr.length; i++) {
+    sparkle = sparklesArr[i];
+    remove = sparkle.diesAt <= Date.now();
+    
+    if (remove) {
+      document.body.removeChild(sparkle);
+    } else {
+      if (sparkle.maxYTranslation) {
+        let interpolation = calculateInterpolation(sparkle);
+        sparkle.style.transform = `translateY(${interpolation}px)`; 
+      }
+      
+      sparklesArr[moveIndex++] = sparkle;  // faster than array.splice()    
+    }
+  }
+  
+  sparklesArr.length = moveIndex;
+  requestAnimationFrame(moveSparkles);
+}
+
+function calculateInterpolation(sparkle) {
+  let currentMillis = Date.now();
+  let lifeProgress = (currentMillis - sparkle.created) / sparkle.animationSpeed;
+  let interpolation = sparkle.maxYTranslation * lifeProgress;
+  
+  return interpolation;
+}
+
+window.addEventListener('mousemove', function (e) {
+  trailArr.forEach((i) => {trailAnimation(e, i)});
+
+  let maxYTranslation = '80';
+  trailArr.forEach((i) => {trailAnimation(e, i, maxYTranslation)});
+}, false);
+
+moveSparkles(); // starts the recursive loop
+    const audio = new Audio('defying-gravity.mp3');
+    audio.loop = true;
+    document.body.addEventListener('click', () => {
+        if (audio.paused) {
+            audio.play();
+        } else {
+            audio.pause();
+        }
+    });
+</script>
+</body>
+</html>
